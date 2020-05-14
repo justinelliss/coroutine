@@ -10,7 +10,6 @@ class LifeGoalViewModel : ViewModel() {
 
   val firstTodo = liveData(Dispatchers.IO) {
     val retrivedTodo = repository.getTodo(1)
-
     emit(retrivedTodo)
   }
 
